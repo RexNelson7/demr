@@ -5,7 +5,10 @@ load_data <- function(){
 
 library(roxygen2)
 
+#' This is just to load our preliminary data.
+#' @importFrom tidytuesdayR tt_load
 #'
+
 
 
 

@@ -1,14 +1,17 @@
-load_data <- function(){
-  tuesdata <- tidytuesdayR::tt_load('2024-11-05')
-  tuesdata$democracy_data
-}
-
 library(roxygen2)
 
-#' This is just to load our preliminary data.
-#' @importFrom tidytuesdayR tt_load
+#' This is the first function to load our data.
 #'
+#' @importFrom readr read_csv
+#'
+#'
+#' @return A data frame from dem_data.csv
+#'
+#' @export
 
+load_data <- function(){
+  demdata <- read_csv("dem_data.csv")
+}
 
 
 

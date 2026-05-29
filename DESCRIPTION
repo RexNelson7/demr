@@ -13,7 +13,12 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 8.0.0
 Suggests: 
     knitr,
+<<<<<<< HEAD
     rmarkdown,
     testthat (>= 3.0.0)
 VignetteBuilder: knitr
 Config/testthat/edition: 3
+=======
+    rmarkdown
+VignetteBuilder: knitr
+>>>>>>> 643e95c2df52305bedd9c67acd9c61380781af25

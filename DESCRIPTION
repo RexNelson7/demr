@@ -6,19 +6,17 @@ Authors@R:
     person("Rex", "Nelson", , "rnelso33@calpoly.edu", role = c("aut", "cre"))
     person("Talan", "Williams", , "twilli93@calpoly.edu", role = c("aut", "cre"))
 Description: Assists analysis on Geopolitical Structures. 
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 8.0.0
-Suggests: 
+Imports:
+    dplyr,
+    ggplot2,
+    readr
+Suggests:
     knitr,
-<<<<<<< HEAD
     rmarkdown,
     testthat (>= 3.0.0)
 VignetteBuilder: knitr
 Config/testthat/edition: 3
-=======
-    rmarkdown
-VignetteBuilder: knitr
->>>>>>> 643e95c2df52305bedd9c67acd9c61380781af25

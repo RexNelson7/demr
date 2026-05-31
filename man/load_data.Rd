@@ -2,13 +2,13 @@
 % Please edit documentation in R/load_data.R
 \name{load_data}
 \alias{load_data}
-\title{This is the first function to load our data.}
+\title{Load democracy data}
 \usage{
 load_data()
 }
 \value{
-A data frame from dem_data.csv
+A tibble containing country-level democracy and representation data.
 }
 \description{
-This is the first function to load our data.
+Loads the democracy data used in the demr package.
 }

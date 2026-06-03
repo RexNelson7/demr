@@ -6,6 +6,7 @@
 #' @param level A string input to specify the level of representation
 #'
 #' @return A violin plot organized by continent
+#' @export
 
 plot_demscore <- function(level){
   if(level %in% c("High", "Moderate", "Low")) {

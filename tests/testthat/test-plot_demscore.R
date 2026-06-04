@@ -11,6 +11,3 @@ test_that("plot dem score works", {
   expect_s3_class(plot_dem_low, "ggplot")
   expect_equal(plot_na, NULL)
 })
-
-
-

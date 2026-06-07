@@ -63,6 +63,13 @@ anova_rep_type(dem_data)
 
 A small p-value would suggest that average spatial democracy scores are not equal across all representation categories.
 
+## Function 5: Create a Democracy Index table
+
+The `democracy_index_table()` function creates a formatted table of countries with high Democracy Index scores for selected years.
+
+```{r}
+democracy_index_table()
+```
 
 
 

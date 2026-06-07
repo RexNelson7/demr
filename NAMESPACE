@@ -2,7 +2,9 @@
 
 export(anova_rep_type)
 export(avg_table_country)
+export(democracy_index_table)
 export(load_data)
+export(load_democracy_index)
 export(plot_by_cont)
 export(plot_demscore)
 importFrom(ggplot2,aes)

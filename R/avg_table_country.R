@@ -12,6 +12,9 @@ avg_table_country <- function(dat) {
     c("country", "spatial_democracy", "pop_prop", "pop_prop_log")
   )
 
+  dat <- data.table::as.data.table(dat)
+  data.table::setDF(dat)
+
   dat |>
     dplyr::group_by(.data$country) |>
     dplyr::summarise(

@@ -10,12 +10,16 @@
 
 plot_demscore <- function(level){
   if(level %in% c("High", "Moderate", "Low")) {
-    p <- ggplot(
+    p <- ggplot2::ggplot(
       load_data(),
-      aes(x=region, y=spatial_democracy, fill = region)) +
-      geom_violin() +
-      scale_fill_brewer(palette = "Dark2") +
-      labs(
+      ggplot2::aes(
+        x = .data$region,
+        y = .data$spatial_democracy,
+        fill = .data$region
+      )) +
+      ggplot2::geom_violin() +
+      ggplot2::scale_fill_brewer(palette = "Dark2") +
+      ggplot2::labs(
         title = "Spatial Democracy by Region",
         y = "Spatial Democracy",
         x = " ",

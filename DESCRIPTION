@@ -1,10 +1,11 @@
 Package: demr
 Title: Geopolitical Structures Analysis
 Version: 0.0.0.9000
-Authors@R: 
-    person("Grant", "Cowles", , "gycowles@calpoly.edu", role = c("aut", "cre"))
-    person("Rex", "Nelson", , "rnelso33@calpoly.edu", role = c("aut", "cre"))
-    person("Talan", "Williams", , "twilli93@calpoly.edu", role = c("aut", "cre"))
+Authors@R: c(
+    person("Grant", "Cowles", email = "gycowles@calpoly.edu", role = "aut"),
+    person("Rex", "Nelson", email = "rnelso33@calpoly.edu", role = c("aut", "cre")),
+    person("Talan", "Williams", email = "twilli93@calpoly.edu", role = "aut")
+    )
 Description: Assists analysis on Geopolitical Structures. 
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -13,7 +14,8 @@ RoxygenNote: 8.0.0
 Imports:
     dplyr,
     ggplot2,
-    readr
+    readr,
+    rlang
 Suggests:
     knitr,
     rmarkdown,

@@ -1,0 +1,77 @@
+---
+title: "Main Functions"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Main Functions}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(demr)
+
+dem_data <- load_data()
+```
+
+## Load the data
+
+The `load_data()` function loads the democracy and representation dataset used in this package.
+
+```{r}
+dem_data <- load_data()
+head(dem_data)
+```
+
+## Function 1: Plot democracy scores by region
+
+The `plot_demscore()` function creates a violin plot showing the distribution of spatial democracy scores by region.
+
+```{r}
+plot_demscore("High")
+```
+
+## Function 2: Plot one region
+
+The `plot_by_cont()` function creates a scatterplot for one selected region. It compares logged population proportion to spatial democracy score, with points colored by representation type.
+
+```{r}
+plot_by_cont(dem_data, "Europe")
+```
+
+## Function 3: Summarize by country
+
+The `avg_table_country()` function condenses the data by country and calculates average values for spatial democracy, population proportion, and logged population proportion.
+
+```{r}
+avg_table_country(dem_data)
+```
+
+## Function 4: Run ANOVA by representation type
+
+The `anova_rep_type()` function runs a one-way ANOVA to test whether average spatial democracy scores differ across representation types.
+
+```{r}
+anova_rep_type(dem_data)
+```
+
+A small p-value would suggest that average spatial democracy scores are not equal across all representation categories.
+
+
+
+
+
+
+
+
+
+
+
+
+
